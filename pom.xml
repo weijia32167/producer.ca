@@ -9,7 +9,10 @@
     <packaging>war</packaging>
 
     <properties>
+<<<<<<< HEAD
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+=======
+>>>>>>> b0fd0283e6a4e58f0ef3417e522317537455a289
         <log4j2.version>2.5</log4j2.version>
         <rocketmq.version>3.2.6</rocketmq.version>
         <spring.version>3.1.4.RELEASE</spring.version>
@@ -170,7 +173,11 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <version>2.5.3</version>
                 <configuration>
+<<<<<<< HEAD
                     <tagBase>https://github.com/weijia32167/producer.ca/tags</tagBase>
+=======
+                    <tagBase>https://github.com/weijia32167/ip.lib/tags</tagBase>
+>>>>>>> b0fd0283e6a4e58f0ef3417e522317537455a289
                     <username>weijia32167</username>
                     <password>6070790aj</password>
                 </configuration>
