@@ -4,7 +4,6 @@ import com.alibaba.rocketmq.client.producer.DefaultMQProducer;
 import com.alibaba.rocketmq.client.producer.SendResult;
 import com.alibaba.rocketmq.common.message.Message;
 import com.sohu.tv.drm.ca.config.SystemConfig;
-import com.sun.xml.internal.messaging.saaj.util.ByteInputStream;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.springframework.web.context.support.WebApplicationContextUtils;
@@ -52,7 +51,7 @@ public class UploadServlet extends HttpServlet {
             InputStream is = part.getInputStream();
             byte[] bytes = new byte[is.available()];
             is.read(bytes);
-            BufferedReader br = new BufferedReader(new InputStreamReader(new ByteInputStream(bytes,bytes.length)));
+            BufferedReader br = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(bytes)));
             String line;
             while((line=br.readLine())!=null){
                 if(line.length()!= SystemConfig.KEY_LENGTH){
