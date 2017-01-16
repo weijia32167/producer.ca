@@ -170,7 +170,7 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <version>2.5.3</version>
                 <configuration>
-                    <tagBase>https://github.com/weijia32167/ip.lib/tags</tagBase>
+                    <tagBase>https://github.com/weijia32167/producer.ca/tags</tagBase>
                     <username>weijia32167</username>
                     <password>6070790aj</password>
                 </configuration>
