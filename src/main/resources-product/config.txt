@@ -1,0 +1,3 @@
+upload_dir=/data/upload
+key_length=16
+printDetail=false
